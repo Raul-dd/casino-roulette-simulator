@@ -1,4 +1,4 @@
-# 🎰 Casino Roulette Simulator
+#  Casino Roulette Simulator
 
 <p align="center">
   <strong>Simulador de ruleta europea desarrollado en Bash</strong>
@@ -25,7 +25,7 @@
 
 ---
 
-## 📌 Descripción
+## Descripción
 
 **Casino Roulette Simulator** es un proyecto de línea de comandos desarrollado con Bash que reproduce rondas de una ruleta europea para experimentar con diferentes estrategias de apuestas.
 
@@ -35,18 +35,18 @@ Su ejecución se realiza desde la terminal mediante argumentos, mientras que la 
 
 El proyecto está orientado al aprendizaje de scripting en Bash, estructuras de control, operaciones aritméticas, generación de valores aleatorios y automatización de procesos en la terminal.
 
-## ✨ Características
+##  Características
 
-- 🎲 **Simulación de ruleta europea:** generación de resultados del 0 al 36.
-- 💰 **Capital inicial configurable:** define el dinero virtual con el que comienza la simulación.
-- 📈 **Estrategia Martingala:** duplica la apuesta tras una pérdida y vuelve a la apuesta inicial después de una victoria, según la lógica implementada.
-- 🔄 **Labouchère inversa:** utiliza una secuencia numérica para calcular y ajustar las apuestas.
-- 🎯 **Selección de apuestas:** permite apostar continuamente a números pares o impares.
-- 🎨 **Interfaz de terminal a color:** mensajes visuales para distinguir eventos y resultados.
-- 📊 **Información de la sesión:** muestra datos sobre las jugadas y el capital durante la ejecución, según la estrategia seleccionada.
-- ⌨️ **Ejecución mediante argumentos:** configura el capital y la estrategia sin modificar el código fuente.
+- **Simulación de ruleta europea:** generación de resultados del 0 al 36.
+-  **Capital inicial configurable:** define el dinero virtual con el que comienza la simulación.
+-  **Estrategia Martingala:** duplica la apuesta tras una pérdida y vuelve a la apuesta inicial después de una victoria, según la lógica implementada.
+-  **Labouchère inversa:** utiliza una secuencia numérica para calcular y ajustar las apuestas.
+-  **Selección de apuestas:** permite apostar continuamente a números pares o impares.
+-  **Interfaz de terminal a color:** mensajes visuales para distinguir eventos y resultados.
+-  **Información de la sesión:** muestra datos sobre las jugadas y el capital durante la ejecución, según la estrategia seleccionada.
+-  **Ejecución mediante argumentos:** configura el capital y la estrategia sin modificar el código fuente.
 
-## 🧰 Tecnologías utilizadas
+##  Tecnologías utilizadas
 
 | Tecnología | Aplicación |
 |---|---|
@@ -57,7 +57,7 @@ El proyecto está orientado al aprendizaje de scripting en Bash, estructuras de 
 | **ANSI escape sequences** | Colores y formato de la salida en terminal. |
 | **`tput`** | Control de la visibilidad del cursor en terminales compatibles. |
 
-## 📋 Requisitos
+##  Requisitos
 
 Antes de ejecutar el simulador, asegúrate de contar con:
 
@@ -68,7 +68,7 @@ Antes de ejecutar el simulador, asegúrate de contar con:
 
 No requiere frameworks web, bases de datos ni dependencias de Composer o NPM.
 
-## 🚀 Instalación y uso
+##  Instalación y uso
 
 ### 1. Clonar el repositorio
 
@@ -104,7 +104,7 @@ Parámetros disponibles:
 | `-t` | Estrategia de apuestas que se utilizará. |
 | `-h` | Opción reservada en el script; para consultar el uso, ejecuta el programa sin argumentos. |
 
-### 🎮 Ejemplos de ejecución
+###  Ejemplos de ejecución
 
 **Opción 1 — Estrategia Martingala**
 
@@ -124,9 +124,9 @@ Inicia la simulación con el mismo capital y aplica la estrategia basada en una 
 
 > **Importante:** Los nombres de las estrategias deben escribirse exactamente como aparecen en los ejemplos, respetando las mayúsculas y minúsculas.
 
-## 🧠 Estrategias implementadas
+##  Estrategias implementadas
 
-### 1. 📈 Martingala
+### 1.  Martingala
 
 La Martingala es un método de progresión de apuestas que incrementa la cantidad apostada después de una pérdida y restablece la apuesta inicial después de una victoria.
 
@@ -141,7 +141,7 @@ La Martingala es un método de progresión de apuestas que incrementa la cantida
 
 **Objetivo de aprendizaje:** observar cómo una progresión de apuestas afecta al capital disponible y cómo las pérdidas consecutivas pueden incrementar rápidamente el riesgo.
 
-### 2. 🔄 Labouchère inversa
+### 2.  Labouchère inversa
 
 Esta estrategia utiliza una secuencia numérica para determinar la cantidad de las apuestas.
 
@@ -169,7 +169,7 @@ La apuesta inicial se calcula sumando los extremos de la secuencia:
 
 > Las descripciones anteriores resumen el comportamiento previsto de las estrategias. La lógica exacta del código determina los resultados de cada sesión.
 
-## 🎲 ¿Cómo funciona la simulación?
+##  ¿Cómo funciona la simulación?
 
 El flujo general del programa es el siguiente:
 
@@ -202,7 +202,7 @@ Seleccionar estrategia
   Continuar hasta la condición de salida
 ```
 
-## 📂 Estructura del repositorio
+##  Estructura del repositorio
 
 ```text
 casino-roulette-simulator/
@@ -211,7 +211,7 @@ casino-roulette-simulator/
 
 El proyecto concentra la lógica de ejecución en un único archivo Bash, lo que facilita su lectura, ejecución y modificación.
 
-## ⚠️ Consideraciones importantes
+##  Consideraciones importantes
 
 - **Simulación educativa:** el programa utiliza dinero virtual y no se conecta a casinos ni realiza apuestas reales.
 - **Sin garantías de ganancias:** ninguna de las estrategias elimina la ventaja matemática de la casa ni garantiza resultados positivos.
@@ -219,7 +219,7 @@ El proyecto concentra la lógica de ejecución en un único archivo Bash, lo que
 - **Resultados pseudoaleatorios:** los valores generados por `$RANDOM` no constituyen una fuente criptográficamente segura.
 - **Validación de entradas:** utiliza valores numéricos positivos para el capital y la apuesta inicial. La implementación actual no valida de forma exhaustiva todas las entradas posibles.
 
-## 🔭 Mejoras futuras
+##  Mejoras futuras
 
 - [ ] Validación robusta de argumentos y valores introducidos.
 - [ ] Incorporación de un menú interactivo para seleccionar estrategias.
@@ -231,7 +231,7 @@ El proyecto concentra la lógica de ejecución en un único archivo Bash, lo que
 
 Estas propuestas representan posibles ampliaciones, no funcionalidades que necesariamente estén disponibles en la versión actual.
 
-## 🤝 Contribuciones
+##  Contribuciones
 
 Las sugerencias y mejoras son bienvenidas.
 
@@ -240,14 +240,10 @@ Las sugerencias y mejoras son bienvenidas.
 3. Implementa y prueba los cambios.
 4. Abre un *pull request* con una descripción clara de tu propuesta.
 
-## 📄 Licencia
-
-Consulta el repositorio para verificar si se ha definido una licencia. Si no existe un archivo `LICENSE`, los permisos de reutilización y distribución no deben darse por supuestos.
-
----
+------
 
 <p align="center">
-  <strong>🎰 Casino Roulette Simulator</strong>
+  <strong> Casino Roulette Simulator</strong>
   <br>
   <sub>Bash scripting · Simulación probabilística · Estrategias de apuestas</sub>
   <br><br>
